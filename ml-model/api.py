@@ -14,9 +14,9 @@ try:
     carbon_model = joblib.load("model_carbon.pkl")
     scaler = joblib.load("scaler.pkl")
     label_encoders = joblib.load("label_encoders.pkl")
-    print("✅ Models loaded successfully")
+    print("OK: Models loaded successfully")
 except Exception as e:
-    print(f"❌ Error loading models. Did you run train_model.py first? {e}")
+    print(f"ERROR: Error loading models. Did you run train_model.py first? {e}")
     eco_model = None
     carbon_model = None
     scaler = None
